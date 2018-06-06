@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.JSportMenuController">
+   <children>
+      <AnchorPane prefHeight="438.0" prefWidth="700.0" style="-fx-background-image: url('file:C:/Users/cobra/IdeaProjects/JSport/src/Pictures/JSportMenuBack.png');">
+         <children>
+            <Label layoutX="21.0" layoutY="7.0" prefHeight="50.0" prefWidth="164.0" text="Trainings" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="HomeExerciseButton" layoutX="186.0" layoutY="95.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="133.0" style="-fx-background-image: url('file:C:/Users/cobra/IdeaProjects/JSport/src/Pictures/home_exercises.png');" textFill="WHITE">
+               <font>
+                  <Font name="MV Boli" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="RunExerciseButton" layoutX="408.0" layoutY="95.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="133.0" style="-fx-background-image: url('file:C:/Users/cobra/IdeaProjects/JSport/src/Pictures/run_exercise.png');" textFill="WHITE">
+               <font>
+                  <Font name="MV Boli" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="GymExerciseButton" layoutX="186.0" layoutY="272.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="133.0" style="-fx-background-image: url('file:C:/Users/cobra/IdeaProjects/JSport/src/Pictures/gym_exercise.png');" textFill="WHITE">
+               <font>
+                  <Font name="MV Boli" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="WorkoutExerciseButton" layoutX="408.0" layoutY="272.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="133.0" style="-fx-background-image: url('file:C:/Users/cobra/IdeaProjects/JSport/src/Pictures/workout_exercise.png');" textFill="WHITE">
+               <font>
+                  <Font name="MV Boli" size="25.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="MenuButton" layoutX="579.0" layoutY="12.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: black; -fx-border-color: fafafa;" text="Menu" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="AccountButton" mnemonicParsing="false" text="Account" />
+                  <MenuItem fx:id="CalculatorButton" mnemonicParsing="false" text="Calculator" />
+                <MenuItem fx:id="ChangeUserButton" mnemonicParsing="false" text="Change user" />
+                  <MenuItem fx:id="QuitButton" mnemonicParsing="false" text="Quit" />
+              </items>
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="18.0" />
+               </font>
+            </MenuButton>
+            <Text fill="WHITE" layoutX="191.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Train">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="458.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Run">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="233.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gym">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="437.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workout">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

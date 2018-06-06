@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeExercisesController">
+    <children>
+        <AnchorPane prefHeight="431.0" prefWidth="675.0" style="-fx-background-color: #1253bc; -fx-background-image: url('file:E:/Install/mainlogo.png');">
+            <children>
+                <Label layoutX="26.0" layoutY="14.0" text="Home Train" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="40.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="HomeTrain" layoutX="44.0" layoutY="83.0" prefHeight="238.0" prefWidth="587.0">
+                    <columns>
+                        <TableColumn fx:id="dayColumn" prefWidth="41.0" text="Day" />
+                        <TableColumn fx:id="setsColumn" prefWidth="49.0" text="Sets" />
+                        <TableColumn fx:id="squatsColumn" prefWidth="79.0" text="Squats" />
+                        <TableColumn fx:id="pushUpsColumn" prefWidth="88.0" text="Push Ups" />
+                        <TableColumn fx:id="pressColumn" prefWidth="75.0" text="Press" />
+                        <TableColumn fx:id="rearPushUpsColumn" prefWidth="95.0" text="Rear Push Ups" />
+                        <TableColumn fx:id="impactsColumn" prefWidth="83.0" text="Impacts" />
+                        <TableColumn fx:id="plankColumn" prefWidth="75.0" text="Plank" />
+                    </columns>
+                </TableView>
+                <Button fx:id="LoadButton" layoutX="477.0" layoutY="382.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="87.0" style="-fx-background-radius: 10; -fx-background-color: #1253bc;" text="Load" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Lucida Sans Demibold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="AddButton" layoutX="596.0" layoutY="334.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" style="-fx-background-radius: 10; -fx-background-color: #1253bc;" text="Add" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Lucida Sans Demibold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="DeleteButton" layoutX="575.0" layoutY="382.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="87.0" style="-fx-background-radius: 10; -fx-background-color: #1253bc;" text="Delete" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Lucida Sans Demibold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="squatsAdd" layoutX="119.0" layoutY="337.0" prefHeight="35.0" prefWidth="65.0" promptText="Squats" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="pushUpsAdd" layoutX="196.0" layoutY="337.0" prefHeight="35.0" prefWidth="71.0" promptText="Push Ups" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="pressAdd" layoutX="281.0" layoutY="337.0" prefHeight="35.0" prefWidth="65.0" promptText="Press" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="rPushUpsAdd" layoutX="355.0" layoutY="337.0" prefHeight="35.0" prefWidth="87.0" promptText="Rear Push Ups" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="impactsAdd" layoutX="449.0" layoutY="337.0" prefHeight="35.0" prefWidth="71.0" promptText="Impacts" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="plankAdd" layoutX="532.0" layoutY="337.0" prefHeight="35.0" prefWidth="57.0" promptText="Plank" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="toMainPage" layoutX="560.0" layoutY="17.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-image: url('file:E:/Install/mainlogo.png');" text="Back" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Leelawadee UI Semilight" size="22.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="dayAdd" layoutX="2.0" layoutY="337.0" prefHeight="35.0" prefWidth="49.0" promptText="Day" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="setsAdd" layoutX="62.0" layoutY="337.0" prefHeight="35.0" prefWidth="49.0" promptText="Sets" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-color: fafafa;">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
